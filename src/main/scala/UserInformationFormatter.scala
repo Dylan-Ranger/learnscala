@@ -26,17 +26,23 @@ object UserInformationFormatter {
       println("What is your gender?")
       val userGender = readLine()
 
-      // Multi-line string are created by using three quotation symbols
+      /*
+       Multi-line string are created by using three quotation symbols.
+       String interpolation is achieved by prefixing strings with s and then interpolation with ${<value>}
+       */
       val userIdCard =  s""" USER IDENTIFICATION CARD:
           | =====================================
           | Name:        ${userFirstName}
           | Surname:     ${userLastName}
           | Gender:      ${userGender}
           | Age:         ${userAge}
+          | Height:      ${userHeight}
+          | Weight:      ${userWeight}
           | Nationality: ${userNationality}
           | =====================================
           |""".stripMargin
 
+      // Operations can be carried out inside the interpolation.
       val userFacts =
           s""" Here are some interesting facts about you:
             | You have lived ${userAge * 365} days
@@ -44,6 +50,6 @@ object UserInformationFormatter {
             |""".stripMargin
 
       println(userIdCard)
-      println("\n"+userFacts)
+      println("\n"+userFacts) // Variables don't have to be interpolated addition works too.
   }
 }
