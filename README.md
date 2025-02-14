@@ -5,9 +5,6 @@
 - [Features](#features)
 - [System Diagram](#system-diagram)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -31,8 +28,3 @@ To run this application, ensure you have the following installed:
 - **Java JDK 8 or higher**
 - **Scala 2.x**
 - **SBT (Scala Build Tool)**
-
-### Installation
-1. Clone this repository:
-   ```bash
-   git clone <repository-url>
