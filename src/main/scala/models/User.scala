@@ -8,7 +8,7 @@ class User(
   val dateOfBirth: String,
   val height: Double,
   val weight: Double,
-  val sex: Enum) {
+  val sex: String) {
 
   def apply(): Unit = {
     println("User class instantiated.")

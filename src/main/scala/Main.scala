@@ -3,12 +3,7 @@ import models._
 
 object Main {
   def main(args: Array[String]): Unit = {
-
-    val question = new Question()
-    val user = new User()
-    val id = new IdNumberGenerator("2020-01-01", "Female", true)
-    val validator = new InputValidator()
-    val printer = new ResultPrinter()
+    print("Your program compiles. Congrats!")
 
 //    def executeUserInterAction(): Unit = {
 //      // Println does not require an import
