@@ -1,6 +1,5 @@
 import scala.io.StdIn.{readLine, readInt, readDouble}
 
-
 object UserInformationFormatter {
   def executeUserInterAction(): Unit = {
       // Println does not require an import
@@ -11,8 +10,10 @@ object UserInformationFormatter {
       println("What is your last name?")
       val userLastName = readLine()
 
-      println("How old are you?")
-      val userAge = readInt()
+      println("Please enter your date of birth (Format: YYYY-MM-DD")
+      var dateOfBirth = readLine()
+      new IdNumberGenerator(dateOfBirth, "male", false)
+      val userAge = 2025 - Integer.parseInt(dateOfBirth.split("-")(0)) // Types can be converted in much the same way as Java.
 
       println("How much do you weigh?")
       val userWeight = readInt() // Values can be parsed at a command-line level (See Double below)
