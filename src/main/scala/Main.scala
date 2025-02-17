@@ -1,9 +1,13 @@
-import util._
+import processes._
 import models._
 
 object Main {
   def main(args: Array[String]): Unit = {
     print("Your program compiles. Congrats!")
+     val qAndA = new QuestionAndAnswer[Int]("Who dis", 5)
+     qAndA.execute()
+    // TODO: Questions datastructure using implicits to make input type dynamic in QuestionAndAnswer.
+    // TODO:
 
 //    def executeUserInterAction(): Unit = {
 //      // Println does not require an import
