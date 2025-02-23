@@ -6,6 +6,18 @@ object Main {
     print("Your program compiles. Congrats!")
      val qAndA = new QuestionAndAnswer[Int]("Who dis", 5)
      qAndA.execute()
+
+    val questions = ArrayBuffer(
+      "What is your first name?",
+      "What is your last name?",
+      "Please enter your date of birth (Format: YYYY-MM-DD)",
+      "How much do you weigh?",
+      "How tall are you in meters?",
+      "What is your nationality?",
+      "What is your gender?"
+    )
+
+
     // TODO: Questions datastructure using implicits to make input type dynamic in QuestionAndAnswer.
     // TODO:
 
@@ -18,7 +30,7 @@ object Main {
 //      println("What is your last name?")
 //      val userLastName = readLine()
 //
-//      println("Please enter your date of birth (Format: YYYY-MM-DD")
+//      println("Please enter your date of birth (Format: YYYY-MM-DD)")
 //      var dateOfBirth = readLine()
 //      val userAge = 2025 - Integer.parseInt(dateOfBirth.split("-")(0)) // Types can be converted in much the same way as Java.
 //
