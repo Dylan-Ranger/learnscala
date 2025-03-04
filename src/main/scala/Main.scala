@@ -1,22 +1,16 @@
 import processes._
-import models._
+import models.GlobalStorage._
+
 
 object Main {
   def main(args: Array[String]): Unit = {
     print("Your program compiles. Congrats!")
-     val qAndA = new QuestionAndAnswer[Int]("Who dis", 5)
-     qAndA.execute()
+    questions.foreach(q => executeQuestionAndAnswer(q))
 
-    val questions = ArrayBuffer(
-      "What is your first name?",
-      "What is your last name?",
-      "Please enter your date of birth (Format: YYYY-MM-DD)",
-      "How much do you weigh?",
-      "How tall are you in meters?",
-      "What is your nationality?",
-      "What is your gender?"
-    )
-
+    def executeQuestionAndAnswer(question: String): Unit = {
+      val qAndA = new QuestionAndAnswer(question)
+      qAndA.execute()
+    }
 
     // TODO: Questions datastructure using implicits to make input type dynamic in QuestionAndAnswer.
     // TODO:
