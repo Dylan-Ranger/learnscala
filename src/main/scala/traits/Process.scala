@@ -1,5 +1,5 @@
 package traits
 
 trait Process {
-  def execute(): Unit
+  def execute(): Any
 }
